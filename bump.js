@@ -93,8 +93,10 @@ async function main() {
   await runPlain("git", "push", "--force");
 }
 
+console.log('No World!');
+console.log('wat', process.env);
+
 main().catch((error) => {
-  console.log('No World!');
   console.error(error.stack);
   process.exit(1);
 });
